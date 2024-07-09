@@ -7,3 +7,4 @@ export {
   getUserFromSession,
   requireUser,
 } from "./auth.server";
+export { CurrentUser } from "./currentUser";
