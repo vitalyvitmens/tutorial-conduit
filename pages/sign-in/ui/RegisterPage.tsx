@@ -15,7 +15,7 @@ export function RegisterPage() {
               <Link to="/login">Have an account?</Link>
             </p>
 
-            {registerData?.error && (
+            {registerData?.error?.errors?.body && (
               <ul className="error-messages">
                 {registerData.error.errors.body.map((error) => (
                   <li key={error}>{error}</li>
